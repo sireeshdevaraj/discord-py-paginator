@@ -65,11 +65,9 @@ class Paginator(ui.View):
         self.add_item(self.start_btn)
         self.add_item(self.next_elem_btn)
         self.add_item(self.last_elem_btn)
-        self.add_item(view_buttons.Placeholder())
-        self.add_item(view_buttons.Placeholder())
+
         self.add_item(self.stop_btn)
-        self.add_item(view_buttons.Placeholder())
-        self.add_item(view_buttons.Placeholder())
+
 
     async def run(self, *args, **kwargs):
         await self.add_buttons()
@@ -99,11 +97,9 @@ class Paginator(ui.View):
         self.add_item(self.quick_nav_btn)
         self.add_item(self.next_elem_btn)
         self.add_item(self.last_elem_btn)
-        self.add_item(view_buttons.Placeholder())
-        self.add_item(view_buttons.Placeholder())
+
         self.add_item(self.stop_btn)
-        self.add_item(view_buttons.Placeholder())
-        self.add_item(view_buttons.Placeholder())
+
 
     async def paginator_stop(self, interaction: Interaction):
         await self.on_stop(interaction)
