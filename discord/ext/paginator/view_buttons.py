@@ -21,7 +21,7 @@ class FirstElement(button.BetterButton):
             disabled: bool = True
     ):
         super().__init__(
-            label="\U000025c0 \U000025c0",
+            label="⏮️",
             disabled=disabled
         )
         self.client = client
@@ -55,7 +55,7 @@ class PreviousElement(button.BetterButton):
     ):
         super().__init__(
             style=ButtonStyle.blurple,
-            label="\U000025c0",
+            label="⏪",
             disabled=disabled
         )
         self.client = client
@@ -90,7 +90,7 @@ class NextElement(button.BetterButton):
     ):
         super().__init__(
             style=ButtonStyle.blurple,
-            label="\U000025b6",
+            label="⏩",
             disabled=disabled
         )
         self.client = client
@@ -123,7 +123,7 @@ class LastElement(button.BetterButton):
             disabled: bool = True
     ):
         super().__init__(
-            label="\U000025b6 \U000025b6",
+            label="⏭️",
             disabled=disabled
         )
         self.client = client
