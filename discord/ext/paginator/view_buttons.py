@@ -262,11 +262,3 @@ class QuickNav(button.BetterButton):
     async def on_click(self, interaction: Interaction):
         await interaction.response.send_modal(modals.QuickNav(parent=self.parent, user=self.user))
 
-class Placeholder(button.BetterButton):
-    def __init__(
-            self
-    ):
-        super().__init__(
-            label="\U0001f6ab",
-            disabled=True
-        )
