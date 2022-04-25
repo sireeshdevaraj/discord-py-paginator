@@ -158,7 +158,8 @@ class Stop(button.BetterButton):
     ):
         super().__init__(
             style=ButtonStyle.danger,
-            label="<:trash:968080753168625714>",
+            label=None,
+            emoji="<:trash:968080753168625714>",
             disabled=disabled
         )
         self.client = client
@@ -181,7 +182,7 @@ class Stop(button.BetterButton):
     async def on_click(self, interaction: Interaction):
         await self.parent.paginator_stop(interaction)
         await interaction.response.send_message(
-            content="Stopped",
+            content="Stopped Viewing your collection",
             ephemeral=True
         )
 
