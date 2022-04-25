@@ -158,7 +158,7 @@ class Stop(button.BetterButton):
     ):
         super().__init__(
             style=ButtonStyle.danger,
-            label="Quit",
+            label="<:trash:968080753168625714>",
             disabled=disabled
         )
         self.client = client
@@ -195,7 +195,7 @@ class Start(button.BetterButton):
     ):
         super().__init__(
             style=ButtonStyle.success,
-            label="Start",
+            label="view your collection",
             disabled=disabled
         )
         self.client = client
