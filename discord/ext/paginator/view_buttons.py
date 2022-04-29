@@ -181,10 +181,7 @@ class Stop(button.BetterButton):
 
     async def on_click(self, interaction: Interaction):
         await self.parent.paginator_stop(interaction)
-        await interaction.response.send_message(
-            content="Stopped Viewing your collection",
-            ephemeral=True
-        )
+        await interaction.delete_original_message()
 
 class Start(button.BetterButton):
     def __init__(
