@@ -193,7 +193,8 @@ class Start(button.BetterButton):
     ):
         super().__init__(
             style=ButtonStyle.success,
-            label="<:yugioh:968402028382548069> VIEW DECK",
+            label="VIEW DECK",
+            emoji="<:yugioh:968402028382548069>",
             disabled=disabled
         )
         self.client = client
