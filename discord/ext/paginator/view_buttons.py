@@ -181,7 +181,7 @@ class Stop(button.BetterButton):
 
     async def on_click(self, interaction: Interaction):
         await self.parent.paginator_stop(interaction)
-        await self.parent.delete_original_message(interaction)
+        await interaction.response.send_message(content="✅ | Timed out the deck view",ephemeral=True)
 
 class Start(button.BetterButton):
     def __init__(
@@ -193,7 +193,7 @@ class Start(button.BetterButton):
     ):
         super().__init__(
             style=ButtonStyle.success,
-            label="view your collection",
+            label="<:yugioh:968402028382548069> VIEW DECK",
             disabled=disabled
         )
         self.client = client
