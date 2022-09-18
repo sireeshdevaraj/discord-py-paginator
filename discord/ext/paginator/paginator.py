@@ -141,7 +141,7 @@ class Paginator(ui.View):
         )
 
     async def delete_content(self, interaction: Interaction):
-        #await interaction.response.defer()
+        await interaction.response.defer()
         #contents = await self.acquire_page_content(interaction)
 
         # noinspection PyTypeChecker
