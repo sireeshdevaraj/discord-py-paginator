@@ -140,6 +140,19 @@ class Paginator(ui.View):
             **contents
         )
 
+    async def delete_content(self, interaction: Interaction):
+        #await interaction.response.defer()
+        #contents = await self.acquire_page_content(interaction)
+
+        # noinspection PyTypeChecker
+        ws: Webhook = interaction.followup
+
+        #await ws.edit_message(
+        #    (await interaction.original_message()).id,
+        #    **contents
+        #)
+        await ws.delete_original_message()
+
     async def acquire_page_content(self, interaction: Interaction):
         if self.static_data is None:
             return await self.get_page_content(interaction, self.page)

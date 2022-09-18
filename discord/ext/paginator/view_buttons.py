@@ -180,9 +180,10 @@ class Stop(button.BetterButton):
         )
 
     async def on_click(self, interaction: Interaction):
+        await self.parent.delete_content(interaction)
         #await self.parent.paginator_stop(interaction)
         #await self.parent.delete_original_message()
-        await interaction.response.edit_message(content="✅ | Timed out the deck view",embed=None,view=None)
+        #await interaction.response.edit_message(content="✅ | Timed out the deck view",embed=None,view=None)
 class Start(button.BetterButton):
     def __init__(
             self,
