@@ -151,8 +151,7 @@ class Paginator(ui.View):
         #    (await interaction.original_message()).id,
         #    **contents
         #)
-        #await ws.delete_original_message((await interaction.original_message()).id)
-        await interaction.delete_original_message()
+        await ws.delete_message((await interaction.original_message()).id)
 
     async def acquire_page_content(self, interaction: Interaction):
         if self.static_data is None:
