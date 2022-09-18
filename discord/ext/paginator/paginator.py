@@ -105,8 +105,7 @@ class Paginator(ui.View):
         await self.on_stop(interaction)
         super().stop()
 
-    async def paginator_delete(self, interaction: Interaction):
-        await self.interaction.delete_original_message()
+
         
 
     async def on_start(self, interaction: Interaction):
