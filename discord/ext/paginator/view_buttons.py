@@ -224,7 +224,7 @@ class Start(button.BetterButton):
 
         ws = interaction.followup
         await ws.edit_message(
-            (await interaction.original_message()).id,
+            (await interaction.original_response()).id,
             **values
         )
 
